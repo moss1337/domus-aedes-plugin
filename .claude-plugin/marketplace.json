@@ -1,0 +1,43 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "domus-aedes",
+  "owner": {
+    "name": "Domus Aedes",
+    "email": "contact@domusaedes.com",
+    "url": "https://domusaedes.com"
+  },
+  "description": "Domus Aedes property search for Claude Code: homes to buy, rent or stay in across Spain and Morocco, three best matches per brief.",
+  "version": "0.1.0",
+  "plugins": [
+    {
+      "name": "domus-aedes",
+      "source": "./claude",
+      "displayName": "Domus Aedes Property Search",
+      "description": "Searches Domus Aedes' own portfolio of homes to buy, rent long-term or stay in across Spain and Morocco. Each brief returns the three best matches plus refinement suggestions, full property details, and a request-details form that reaches a Domus Aedes advisor.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Domus Aedes",
+        "email": "contact@domusaedes.com",
+        "url": "https://domusaedes.com"
+      },
+      "homepage": "https://ai.domusaedes.com",
+      "repository": "https://github.com/moss1337/domus-aedes-plugin",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "real-estate",
+        "property-search",
+        "marbella",
+        "costa-del-sol",
+        "marrakech",
+        "spain",
+        "morocco",
+        "villas",
+        "rentals",
+        "holiday-stays",
+        "mcp"
+      ],
+      "tags": ["real estate", "property", "villas", "rentals", "stays", "Spain", "Morocco"]
+    }
+  ]
+}
