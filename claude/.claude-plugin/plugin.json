@@ -1,9 +1,9 @@
 {
-  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "domus-aedes",
   "displayName": "Domus Aedes Property Search",
   "version": "0.1.0",
-  "description": "Searches Domus Aedes' own portfolio of homes to buy, rent long-term or stay in across Spain and Morocco. Each brief returns the three best matches plus refinement suggestions, full property details, and a request-details form that reaches a Domus Aedes advisor.",
+  "description": "Searches Domus Aedes' own portfolio of homes to buy, rent long-term or stay in across Spain and Morocco (short stays on the Costa del Sol, in Catalonia, Marrakech and Casablanca). Each brief returns the best matches — up to six — plus refinement suggestions, full property details, and a request-details form that reaches a Domus Aedes advisor.",
   "author": {
     "name": "Domus Aedes",
     "email": "contact@domusaedes.com",

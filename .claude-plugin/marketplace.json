@@ -1,19 +1,19 @@
 {
-  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "domus-aedes",
   "owner": {
     "name": "Domus Aedes",
     "email": "contact@domusaedes.com",
     "url": "https://domusaedes.com"
   },
-  "description": "Domus Aedes property search for Claude Code: homes to buy, rent or stay in across Spain and Morocco, three best matches per brief.",
+  "description": "Domus Aedes property search for Claude Code: homes to buy, rent or stay in across Spain and Morocco, up to six best matches per brief.",
   "version": "0.1.0",
   "plugins": [
     {
       "name": "domus-aedes",
       "source": "./claude",
       "displayName": "Domus Aedes Property Search",
-      "description": "Searches Domus Aedes' own portfolio of homes to buy, rent long-term or stay in across Spain and Morocco. Each brief returns the three best matches plus refinement suggestions, full property details, and a request-details form that reaches a Domus Aedes advisor.",
+      "description": "Searches Domus Aedes' own portfolio of homes to buy, rent long-term or stay in across Spain and Morocco (short stays on the Costa del Sol, in Catalonia, Marrakech and Casablanca). Each brief returns the best matches — up to six — plus refinement suggestions, full property details, and a request-details form that reaches a Domus Aedes advisor.",
       "version": "0.1.0",
       "author": {
         "name": "Domus Aedes",

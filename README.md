@@ -1,12 +1,12 @@
 # Domus Aedes — property search in ChatGPT and Claude
 
-Domus Aedes is a property agency in Spain and Morocco (Marbella, Benahavís, the Golden Mile, Sotogrande, Marrakech, Casablanca). This repository is the public plugin bundle that connects ChatGPT, Claude, Claude Code and Codex to the Domus Aedes property search server at **https://ai.domusaedes.com/mcp** — a remote MCP server with an interactive property view (photos, price, key facts, map, refinement chips, detail view and a request-details form).
+Domus Aedes is a property agency in Spain and Morocco (Marbella, Benahavís, the Golden Mile, Sotogrande, Marrakech, Casablanca), with short stays on the Costa del Sol, in Catalonia, Marrakech and Casablanca. This repository is the public plugin bundle that connects ChatGPT, Claude, Claude Code and Codex to the Domus Aedes property search server at **https://ai.domusaedes.com/mcp** — a remote MCP server with an interactive property view (photos, price, key facts, map, refinement chips, detail view and a request-details form).
 
 No account, no API key, no OAuth. The server only ever reads Domus Aedes' own portfolio and, when you ask for it, forwards your contact details to a Domus Aedes advisor.
 
-## The one rule: three options, never a list
+## The one rule: up to six options, never a list
 
-Every search returns the **three best matches** for your brief plus a few ways to narrow it down (budget, area, bedrooms, features). Ask for more and the assistant refines the search with you instead of scrolling through pages. There is no pagination anywhere in the API — the server caps results at three.
+Every search returns the **best matches** for your brief — up to six — plus a few ways to narrow it down (budget, area, bedrooms, features). Ask for more and the assistant refines the search with you instead of scrolling through pages. There is no pagination anywhere in the API — the server caps results at six and never discloses the size of the portfolio. When our own stays are fully booked for your dates, the assistant refers you to the Domus Aedes concierge (https://concierge.domusaedes.com).
 
 ## What you can ask
 
@@ -53,19 +53,19 @@ chatgpt/                          OpenAI plugin bundle: plugin.json, mcp.json, s
 LICENSE                           MIT
 ```
 
-Both bundles ship the same skill, `skills/domus-property-search/SKILL.md`, which teaches the assistant the three-options workflow.
+Both bundles ship the same skill, `skills/domus-property-search/SKILL.md`, which teaches the assistant the best-matches workflow.
 
 ## Tools exposed by the server
 
 | Tool | What it does |
 |---|---|
-| `search_properties` | Three best matches for a brief (buy / rent / stay), total matches, refinement suggestions. Read-only. |
+| `search_properties` | The best matches for a brief (buy / rent / stay), up to six, whether more exist, refinement suggestions — and a concierge referral when no stay is available. Read-only. |
 | `get_property` | Full details for one reference: description, key facts, up to 12 photos, approximate location, listing page, live availability for stays with dates. Read-only. |
 | `request_property_details` | Sends name, email, optional phone and a message to a Domus Aedes advisor. Not destructive, not idempotent. |
 
 ## Privacy
 
-The server stores nothing about your conversation beyond the parameters of the tool call. Contact details are forwarded only when you ask for an advisor. Full policy: https://ai.domusaedes.com/privacy
+Search parameters are not stored beyond short-lived technical logs. When you submit an advisor request, your name, email, phone and message are kept in Domus Aedes' customer records. Full policy: https://ai.domusaedes.com/privacy
 
 ## Contact
 

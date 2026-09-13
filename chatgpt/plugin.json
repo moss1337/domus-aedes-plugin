@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "domus-aedes",
   "version": "0.1.0",
-  "description": "Searches Domus Aedes' own portfolio of homes to buy, rent long-term or stay in across Spain and Morocco. Each brief returns the three best matches plus refinement suggestions, full property details, and a request-details form that reaches a Domus Aedes advisor.",
+  "description": "Searches Domus Aedes' own portfolio of homes to buy, rent long-term or stay in across Spain and Morocco (short stays on the Costa del Sol, in Catalonia, Marrakech and Casablanca). Each brief returns the best matches — up to six — plus refinement suggestions, full property details, and a request-details form that reaches a Domus Aedes advisor.",
   "author": {
     "name": "Domus Aedes",
     "email": "contact@domusaedes.com",
@@ -29,7 +29,7 @@
       "interface": {
         "displayName": "Domus Aedes",
         "shortDescription": "Homes in Spain and Morocco",
-        "longDescription": "Describe what you are looking for — a villa to buy on the Costa del Sol, a long-term rental in Nueva Andalucía, a week in Marrakech — and Domus Aedes returns the three best matches from its own portfolio, with photos, prices, key facts and a map. Ask for more and it narrows the search with you rather than listing pages of results. Open full details, check live availability for stays, and send your contact details to a Domus Aedes advisor without leaving the chat.",
+        "longDescription": "Describe what you are looking for — a villa to buy on the Costa del Sol, a long-term rental in Nueva Andalucía, a week in Marrakech or on the Catalan coast — and Domus Aedes returns the best matches from its own portfolio, up to six at a time, with photos, prices, key facts and a map. Ask for more and it narrows the search with you rather than listing pages of results. Open full details, check live availability for stays (when our own stays are fully booked, it points you to the Domus Aedes concierge), and send your contact details to a Domus Aedes advisor without leaving the chat.",
         "developerName": "Domus Aedes",
         "category": "Lifestyle",
         "capabilities": ["Interactive", "Read", "Write"],

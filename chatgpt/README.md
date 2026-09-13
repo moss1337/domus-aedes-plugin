@@ -7,7 +7,7 @@ The OpenAI plugin package for Domus Aedes property search. It wraps the public M
 ```
 plugin.json                                   portable Agent Plugins manifest (+ extensions.com.openai.interface)
 mcp.json                                      portable MCP config: domus-aedes → streamable-http https://ai.domusaedes.com/mcp
-skills/domus-property-search/SKILL.md         the three-options workflow (identical to the Claude bundle)
+skills/domus-property-search/SKILL.md         the best-matches workflow (identical to the Claude bundle)
 skills/domus-property-search/agents/openai.yaml
                                               OpenAI presentation + MCP dependency for the skill
 assets/icon.png                               512×512 logo used by the manifest
@@ -36,6 +36,6 @@ Portal: https://platform.openai.com/plugins (needs the **Apps Management: Write*
 
 ## Behaviour contract
 
-Three options per search, never a list. "More" → the assistant offers refinements (budget, area, bedrooms, features) and searches again. Facts, prices and amenities come only from tool output.
+Up to six options per search, never a list. "More" → the assistant offers refinements (budget, area, bedrooms, features) and searches again. The assistant never states how many properties Domus Aedes has. Stays with nothing available for the dates → the Domus Aedes concierge (https://concierge.domusaedes.com). Facts, prices and amenities come only from tool output.
 
 Privacy: https://ai.domusaedes.com/privacy · Support: contact@domusaedes.com · +34 930 34 46 10
