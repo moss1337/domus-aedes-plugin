@@ -2,6 +2,8 @@
 
 Domus Aedes is a property agency in Spain and Morocco (Marbella, Benahavís, the Golden Mile, Sotogrande, Marrakech, Casablanca), with short stays on the Costa del Sol, in Catalonia, Marrakech and Casablanca. This repository is the public plugin bundle that connects ChatGPT, Claude, Claude Code and Codex to the Domus Aedes property search server at **https://ai.domusaedes.com/mcp** — a remote MCP server with an interactive property view (photos, price, key facts, map, refinement chips, detail view and a request-details form).
 
+Since September 2026, Domus Aedes homes in Marbella, Marrakech and Casablanca can be searched inside ChatGPT and Claude (live since 13 September 2026). The same guide for people, in English, Spanish and French: https://ai.domusaedes.com · https://ai.domusaedes.com/es · https://ai.domusaedes.com/fr
+
 No account, no API key, no OAuth. The server only ever reads Domus Aedes' own portfolio and, when you ask for it, forwards your contact details to a Domus Aedes advisor.
 
 ## The one rule: up to six options, never a list
@@ -19,15 +21,17 @@ Then: "tell me more about the second one", "narrow it down to Benahavís", "send
 ## Install
 
 ### ChatGPT
-1. Open ChatGPT → **Plugins** (or **Settings → Apps & connectors** / the tools menu) → search **Domus Aedes** → **Connect**.
-2. Start your prompt with "Domus Aedes" the first time so the assistant picks the plugin.
+1. Open **Plugins** in ChatGPT, search for **Domus Aedes** and press **Connect**.
+2. Start your message with "Domus Aedes" and ask.
 
-Not listed yet? Turn on **Settings → Security and login → Developer mode**, go to https://chatgpt.com/plugins, press **+**, name it "Domus Aedes" and enter the public endpoint `https://ai.domusaedes.com/mcp`.
+Or add it by its address: open https://chatgpt.com/plugins, press **+**, choose **Add custom MCP server**, name it **Domus Aedes**, enter `https://ai.domusaedes.com/mcp` with no authentication and choose **Create as a plugin**.
 
 ### Claude (claude.ai, Claude Desktop, mobile)
-1. https://claude.ai/customize/connectors → **+** → **Add custom connector**.
-2. Name **Domus Aedes**, URL `https://ai.domusaedes.com/mcp`, leave OAuth blank → **Add**.
+1. https://claude.ai/customize/connectors → **+ Add** → **Add custom connector**.
+2. Name **Domus Aedes**, URL `https://ai.domusaedes.com/mcp` → **Continue** → **No sign in** → **Add**.
 3. In a chat press **+** → **Connectors** → enable Domus Aedes.
+
+Every Claude plan; the free plan allows one custom connector.
 
 On Team and Enterprise plans an Owner adds it under **Organization settings → Connectors** and members enable it from **Customize → Connectors**.
 

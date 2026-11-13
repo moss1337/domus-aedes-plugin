@@ -30,9 +30,14 @@
     "shortDescription": "Homes in Spain and Morocco",
     "longDescription": "Describe what you are looking for — a villa to buy on the Costa del Sol, a long-term rental in Nueva Andalucía, a week in Marrakech or on the Catalan coast — and Domus Aedes returns the best matches from its own portfolio, up to six at a time, with photos, prices, key facts and a map. Ask for more and it narrows the search with you rather than listing pages of results. Open full details, check live availability for stays (when our own stays are fully booked, it points you to the Domus Aedes concierge), and send your contact details to a Domus Aedes advisor without leaving the chat.",
     "developerName": "Domus Aedes",
-    "category": "Lifestyle",
-    "capabilities": ["Interactive", "Read", "Write"],
+    "category": "Travel",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
     "websiteURL": "https://domusaedes.com",
+    "supportURL": "https://ai.domusaedes.com/docs",
     "privacyPolicyURL": "https://ai.domusaedes.com/privacy",
     "termsOfServiceURL": "https://sales.domusaedes.com/sales/legal/terms",
     "defaultPrompt": [
